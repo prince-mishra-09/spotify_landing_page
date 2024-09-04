@@ -1,0 +1,822 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>spotify clone</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="left">
+
+            <div class="home">
+                <div>
+                    <img src="logo.svg" alt="spotify">
+                </div>
+                <ul>
+                    <li><img src="home.svg" alt="home">Home</li>
+                    <li><img src="serch.svg" alt="search">Search</li>
+                </ul>
+            </div>
+
+            <div class="library">
+
+                <div>
+                    <div class="libnav">
+                        <div>
+                            <img src="lib.svg" alt="library">
+                            <h2 style="text-align: center;">Your Library</h2>
+                        </div>
+                        <div>
+                            <img src="plus.svg" alt="add in library">
+                        </div>
+                    </div>
+
+                    <div class="scroll">
+                        <div class="playlist">
+                            <h2>Create your first playlist</h2>
+                            <p>It's easy,we'll help you</p>
+                            <button>Create playlist</button>
+                        </div>
+                        <div class="podcast">
+                            <h2>Let's find some podcasts to follow</h2>
+                            <p>We'll keep you updated on new episodes</p>
+                            <button>Browes podcasts</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="left-footer">
+                    <div class="links">
+                        <a href="logo.svg">Legal</a>
+                        <a href="logo.svg">Safety&PrivacyCenter</a>
+                        <a href="logo.svg">PrivacyPolicy</a>
+                        <a href="logo.svg">Cookies</a>
+                        <a href="logo.svg">AboutAds</a>
+                        <a href="logo.svg">Accesibility</a>
+                    </div>
+                    <button><img style="width: 15px;" src="trans.svg" alt="E">English</button>
+                </div>
+
+
+            </div>
+        </div>
+
+        <div class="right">
+            <div class="right-nav">
+                <div>
+                    <div class="ham">
+                        <svg class="hb" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 10" stroke="#eee"
+                            stroke-width=".6" fill="rgba(0,0,0,0)" stroke-linecap="round" style="cursor: pointer">
+                            <path d="M2,3L5,3L8,3M2,5L8,5M2,7L5,7L8,7">
+                                <animate dur="0.2s" attributeName="d"
+                                    values="M2,3L5,3L8,3M2,5L8,5M2,7L5,7L8,7;M3,3L5,5L7,3M5,5L5,5M3,7L5,5L7,7"
+                                    fill="freeze" begin="start.begin" />
+                                <animate dur="0.2s" attributeName="d"
+                                    values="M3,3L5,5L7,3M5,5L5,5M3,7L5,5L7,7;M2,3L5,3L8,3M2,5L8,5M2,7L5,7L8,7"
+                                    fill="freeze" begin="reverse.begin" />
+                            </path>
+                            <rect width="10" height="10" stroke="none">
+                                <animate dur="2s" id="reverse" attributeName="width" begin="click" />
+                            </rect>
+                            <rect width="10" height="10" stroke="none">
+                                <animate dur="0.001s" id="start" attributeName="width" values="10;0" fill="freeze"
+                                    begin="click" />
+                                <animate dur="0.001s" attributeName="width" values="0;10" fill="freeze"
+                                    begin="reverse.begin" />
+                            </rect>
+                        </svg>
+                    </div>
+
+                    <img src="prev.svg " style="fill: white;" alt="privious">
+                    <img class="next " src="prev.svg" alt="next">
+                </div>
+                <div>
+                    <button class="signup">SignUp</button>
+                    <button class="login">Login</button>
+                </div>
+            </div>
+            <div class="main">
+                <div class="text">
+                    <h3>Popular Artists</h3>
+                    <h5>Show All</h5>
+                </div>
+
+                <div class="profile">
+                    <div class="creater">
+                        <div class="play">
+                            <svg width="100" height="100" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                                <!-- Green background circle -->
+                                <circle cx="50" cy="50" r="50" fill="green" />
+
+                                <!-- Black play button -->
+                                <polygon points="40,30 70,50 40,70" fill="black" />
+                            </svg>
+                        </div>
+                        <img src="img/pic1.jpeg" alt="">
+                        <h5>Prince Mishra</h5>
+                        <h6>Artist</h6>
+                    </div>
+                    <div class="creater">
+                        <div class="play">
+                            <svg width="100" height="100" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                                <!-- Green background circle -->
+                                <circle cx="50" cy="50" r="50" fill="green" />
+
+                                <!-- Black play button -->
+                                <polygon points="40,30 70,50 40,70" fill="black" />
+                            </svg>
+                        </div>
+                        <img src="img/pic1.jpeg" alt="">
+                        <h5>Prince Mishra</h5>
+                        <h6>Artist</h6>
+                    </div>
+                    <div class="creater">
+                        <div class="play">
+                            <svg width="100" height="100" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                                <!-- Green background circle -->
+                                <circle cx="50" cy="50" r="50" fill="green" />
+
+                                <!-- Black play button -->
+                                <polygon points="40,30 70,50 40,70" fill="black" />
+                            </svg>
+                        </div>
+                        <img src="img/pic1.jpeg" alt="">
+                        <h5>Prince Mishra</h5>
+                        <h6>Artist</h6>
+                    </div>
+                    <div class="creater">
+                        <div class="play">
+                            <svg width="100" height="100" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                                <!-- Green background circle -->
+                                <circle cx="50" cy="50" r="50" fill="green" />
+
+                                <!-- Black play button -->
+                                <polygon points="40,30 70,50 40,70" fill="black" />
+                            </svg>
+                        </div>
+                        <img src="img/pic1.jpeg" alt="">
+                        <h5>Prince Mishra</h5>
+                        <h6>Artist</h6>
+                    </div>
+                    <div class="creater">
+                        <div class="play">
+                            <svg width="100" height="100" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                                <!-- Green background circle -->
+                                <circle cx="50" cy="50" r="50" fill="green" />
+
+                                <!-- Black play button -->
+                                <polygon points="40,30 70,50 40,70" fill="black" />
+                            </svg>
+                        </div>
+                        <img src="img/pic1.jpeg" alt="">
+                        <h5>Prince Mishra</h5>
+                        <h6>Artist</h6>
+                    </div>
+                    <div class="creater">
+                        <div class="play">
+                            <svg width="100" height="100" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                                <!-- Green background circle -->
+                                <circle cx="50" cy="50" r="50" fill="green" />
+
+                                <!-- Black play button -->
+                                <polygon points="40,30 70,50 40,70" fill="black" />
+                            </svg>
+                        </div>
+                        <img src="img/pic1.jpeg" alt="">
+                        <h5>Prince Mishra</h5>
+                        <h6>Artist</h6>
+                    </div>
+                    <div class="creater">
+                        <div class="play">
+                            <svg width="100" height="100" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                                <!-- Green background circle -->
+                                <circle cx="50" cy="50" r="50" fill="green" />
+
+                                <!-- Black play button -->
+                                <polygon points="40,30 70,50 40,70" fill="black" />
+                            </svg>
+                        </div>
+                        <img src="img/pic1.jpeg" alt="">
+                        <h5>Prince Mishra</h5>
+                        <h6>Artist</h6>
+                    </div>
+                </div>
+
+                <div class="songs-nav">
+                    <h3>Popular Songs</h3>
+                    <h5>Show All</h5>
+                </div>
+
+                <div class="songs">
+                    <div class="song-img">
+                        <div class="creater">
+                            <div class="play">
+                                <svg width="100" height="100" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                                    <!-- Green background circle -->
+                                    <circle cx="50" cy="50" r="50" fill="green" />
+
+                                    <!-- Black play button -->
+                                    <polygon points="40,30 70,50 40,70" fill="black" />
+                                </svg>
+                            </div>
+                            <img src="img/songpic.jpeg" alt="songs">
+                            <h5>Ashiqui 2</h5>
+                            <h6 class="h6">Prince Mishra, Piyush Mishra,Betu Mishra Lorem ipsum dolor</h6>
+                        </div>
+                        <div class="creater">
+                            <div class="play">
+                                <svg width="100" height="100" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                                    <!-- Green background circle -->
+                                    <circle cx="50" cy="50" r="50" fill="green" />
+
+                                    <!-- Black play button -->
+                                    <polygon points="40,30 70,50 40,70" fill="black" />
+                                </svg>
+                            </div>
+                            <img src="img/songpic.jpeg" alt="songs">
+                            <h5>Ashiqui 2</h5>
+                            <h6 class="h6">Prince Mishra, Piyush Mishra,Betu Mishra Lorem ipsum dolor</h6>
+                        </div>
+                        <div class="creater">
+                            <div class="play">
+                                <svg width="100" height="100" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                                    <!-- Green background circle -->
+                                    <circle cx="50" cy="50" r="50" fill="green" />
+
+                                    <!-- Black play button -->
+                                    <polygon points="40,30 70,50 40,70" fill="black" />
+                                </svg>
+                            </div>
+                            <img src="img/songpic.jpeg" alt="songs">
+                            <h5>Ashiqui 2</h5>
+                            <h6 class="h6">Prince Mishra, Piyush Mishra,Betu Mishra Lorem ipsum dolor</h6>
+                        </div>
+                        <div class="creater">
+                            <div class="play">
+                                <svg width="100" height="100" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                                    <!-- Green background circle -->
+                                    <circle cx="50" cy="50" r="50" fill="green" />
+
+                                    <!-- Black play button -->
+                                    <polygon points="40,30 70,50 40,70" fill="black" />
+                                </svg>
+                            </div>
+                            <img src="img/songpic.jpeg" alt="songs">
+                            <h5>Ashiqui 2</h5>
+                            <h6 class="h6">Prince Mishra, Piyush Mishra,Betu Mishra Lorem ipsum dolor</h6>
+                        </div>
+                        <div class="creater">
+                            <div class="play">
+                                <svg width="100" height="100" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                                    <!-- Green background circle -->
+                                    <circle cx="50" cy="50" r="50" fill="green" />
+
+                                    <!-- Black play button -->
+                                    <polygon points="40,30 70,50 40,70" fill="black" />
+                                </svg>
+                            </div>
+                            <img src="img/songpic.jpeg" alt="songs">
+                            <h5>Ashiqui 2</h5>
+                            <h6 class="h6">Prince Mishra, Piyush Mishra,Betu Mishra Lorem ipsum dolor</h6>
+                        </div>
+                        <div class="creater">
+                            <div class="play">
+                                <svg width="100" height="100" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                                    <!-- Green background circle -->
+                                    <circle cx="50" cy="50" r="50" fill="green" />
+
+                                    <!-- Black play button -->
+                                    <polygon points="40,30 70,50 40,70" fill="black" />
+                                </svg>
+                            </div>
+                            <img src="img/songpic.jpeg" alt="songs">
+                            <h5>Ashiqui 2</h5>
+                            <h6 class="h6">Prince Mishra, Piyush Mishra,Betu Mishra Lorem ipsum dolor</h6>
+                        </div>
+                        <div class="creater">
+                            <div class="play">
+                                <svg width="100" height="100" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                                    <!-- Green background circle -->
+                                    <circle cx="50" cy="50" r="50" fill="green" />
+
+                                    <!-- Black play button -->
+                                    <polygon points="40,30 70,50 40,70" fill="black" />
+                                </svg>
+                            </div>
+                            <img src="img/songpic.jpeg" alt="songs">
+                            <h5>Ashiqui 2</h5>
+                            <h6 class="h6">Prince Mishra, Piyush Mishra,Betu Mishra Lorem ipsum dolor</h6>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="songs-nav">
+                    <h3>Popular Radios</h3>
+                    <h5>Show All</h5>
+                </div>
+
+                <div class="songs radio">
+                    <div class="song-img">
+                        <div class="creater">
+                            <div class="play">
+                                <svg width="100" height="100" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                                    <!-- Green background circle -->
+                                    <circle cx="50" cy="50" r="50" fill="green" />
+
+                                    <!-- Black play button -->
+                                    <polygon points="40,30 70,50 40,70" fill="black" />
+                                </svg>
+                            </div>
+                            <img src="img/pic2.jpeg" alt="songs">
+                            <h6 class="h6">Prince Mishra, Piyush Mishra,Betu Mishra Lorem ipsum dolor</h6>
+                        </div>
+                        <div class="creater">
+                            <div class="play">
+                                <svg width="100" height="100" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                                    <!-- Green background circle -->
+                                    <circle cx="50" cy="50" r="50" fill="green" />
+
+                                    <!-- Black play button -->
+                                    <polygon points="40,30 70,50 40,70" fill="black" />
+                                </svg>
+                            </div>
+                            <img src="img/pic2.jpeg" alt="songs">
+                            <h6 class="h6">Prince Mishra, Piyush Mishra,Betu Mishra Lorem ipsum dolor</h6>
+                        </div>
+                        <div class="creater">
+                            <div class="play">
+                                <svg width="100" height="100" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                                    <!-- Green background circle -->
+                                    <circle cx="50" cy="50" r="50" fill="green" />
+
+                                    <!-- Black play button -->
+                                    <polygon points="40,30 70,50 40,70" fill="black" />
+                                </svg>
+                            </div>
+                            <img src="img/pic2.jpeg" alt="songs">
+                            <h6 class="h6">Prince Mishra, Piyush Mishra,Betu Mishra Lorem ipsum dolor</h6>
+                        </div>
+                        <div class="creater">
+                            <div class="play">
+                                <svg width="100" height="100" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                                    <!-- Green background circle -->
+                                    <circle cx="50" cy="50" r="50" fill="green" />
+
+                                    <!-- Black play button -->
+                                    <polygon points="40,30 70,50 40,70" fill="black" />
+                                </svg>
+                            </div>
+                            <img src="img/pic2.jpeg" alt="songs">
+                            <h6 class="h6">Prince Mishra, Piyush Mishra,Betu Mishra Lorem ipsum dolor</h6>
+                        </div>
+                        <div class="creater">
+                            <div class="play">
+                                <svg width="100" height="100" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                                    <!-- Green background circle -->
+                                    <circle cx="50" cy="50" r="50" fill="green" />
+
+                                    <!-- Black play button -->
+                                    <polygon points="40,30 70,50 40,70" fill="black" />
+                                </svg>
+                            </div>
+                            <img src="img/pic2.jpeg" alt="songs">
+                            <h6 class="h6">Prince Mishra, Piyush Mishra,Betu Mishra Lorem ipsum dolor</h6>
+                        </div>
+                        <div class="creater">
+                            <div class="play">
+                                <svg width="100" height="100" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                                    <!-- Green background circle -->
+                                    <circle cx="50" cy="50" r="50" fill="green" />
+
+                                    <!-- Black play button -->
+                                    <polygon points="40,30 70,50 40,70" fill="black" />
+                                </svg>
+                            </div>
+                            <img src="img/pic2.jpeg" alt="songs">
+                            <h6 class="h6">Prince Mishra, Piyush Mishra,Betu Mishra Lorem ipsum dolor</h6>
+                        </div>
+                        <div class="creater">
+                            <img src="img/pic2.jpeg" alt="songs">
+                            <h6 class="h6">Prince Mishra, Piyush Mishra,Betu Mishra Lorem ipsum dolor</h6>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="songs-nav">
+                    <h3>Fetured Charts</h3>
+                    <h5>Show All</h5>
+                </div>
+
+                <div class="songs charts">
+                    <div class="song-img">
+                        <div class="creater">
+                            <div class="play">
+                                <svg width="100" height="100" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                                    <!-- Green background circle -->
+                                    <circle cx="50" cy="50" r="50" fill="green" />
+
+                                    <!-- Black play button -->
+                                    <polygon points="40,30 70,50 40,70" fill="black" />
+                                </svg>
+                            </div>
+                            <img src="img/mix.jpg" alt="songs">
+                            <h6 class="h6">Prince Mishra, Piyush Mishra,Betu Mishra Lorem ipsum dolor</h6>
+                        </div>
+                        <div class="creater">
+                            <div class="play">
+                                <svg width="100" height="100" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                                    <!-- Green background circle -->
+                                    <circle cx="50" cy="50" r="50" fill="green" />
+
+                                    <!-- Black play button -->
+                                    <polygon points="40,30 70,50 40,70" fill="black" />
+                                </svg>
+                            </div>
+                            <img src="img/mix.jpg" alt="songs">
+                            <h6 class="h6">Prince Mishra, Piyush Mishra,Betu Mishra Lorem ipsum dolor</h6>
+                        </div>
+                        <div class="creater">
+                            <div class="play">
+                                <svg width="100" height="100" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                                    <!-- Green background circle -->
+                                    <circle cx="50" cy="50" r="50" fill="green" />
+
+                                    <!-- Black play button -->
+                                    <polygon points="40,30 70,50 40,70" fill="black" />
+                                </svg>
+                            </div>
+                            <img src="img/mix.jpg" alt="songs">
+                            <h6 class="h6">Prince Mishra, Piyush Mishra,Betu Mishra Lorem ipsum dolor</h6>
+                        </div>
+                        <div class="creater">
+                            <div class="play">
+                                <svg width="100" height="100" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                                    <!-- Green background circle -->
+                                    <circle cx="50" cy="50" r="50" fill="green" />
+
+                                    <!-- Black play button -->
+                                    <polygon points="40,30 70,50 40,70" fill="black" />
+                                </svg>
+                            </div>
+                            <img src="img/mix.jpg" alt="songs">
+                            <h6 class="h6">Prince Mishra, Piyush Mishra,Betu Mishra Lorem ipsum dolor</h6>
+                        </div>
+                        <div class="creater">
+                            <div class="play">
+                                <svg width="100" height="100" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                                    <!-- Green background circle -->
+                                    <circle cx="50" cy="50" r="50" fill="green" />
+
+                                    <!-- Black play button -->
+                                    <polygon points="40,30 70,50 40,70" fill="black" />
+                                </svg>
+                            </div>
+                            <img src="img/mix.jpg" alt="songs">
+                            <h6 class="h6">Prince Mishra, Piyush Mishra,Betu Mishra Lorem ipsum dolor</h6>
+                        </div>
+                        <div class="creater">
+                            <div class="play">
+                                <svg width="100" height="100" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                                    <!-- Green background circle -->
+                                    <circle cx="50" cy="50" r="50" fill="green" />
+
+                                    <!-- Black play button -->
+                                    <polygon points="40,30 70,50 40,70" fill="black" />
+                                </svg>
+                            </div>
+                            <img src="img/mix.jpg" alt="songs">
+                            <h6 class="h6">Prince Mishra, Piyush Mishra,Betu Mishra Lorem ipsum dolor</h6>
+                        </div>
+                        <div class="creater">
+                            <div class="play">
+                                <svg width="100" height="100" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                                    <!-- Green background circle -->
+                                    <circle cx="50" cy="50" r="50" fill="green" />
+
+                                    <!-- Black play button -->
+                                    <polygon points="40,30 70,50 40,70" fill="black" />
+                                </svg>
+                            </div>
+                            <img src="img/mix.jpg" alt="songs">
+                            <h6 class="h6">Prince Mishra, Piyush Mishra,Betu Mishra Lorem ipsum dolor</h6>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="songs-nav">
+                    <h3>Spotify Playlist</h3>
+                    <h5>Show All</h5>
+                </div>
+
+                <div class="songs radio">
+                    <div class="song-img">
+                        <div class="creater">
+                            <div class="play">
+                                <svg width="100" height="100" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                                    <!-- Green background circle -->
+                                    <circle cx="50" cy="50" r="50" fill="green" />
+
+                                    <!-- Black play button -->
+                                    <polygon points="40,30 70,50 40,70" fill="black" />
+                                </svg>
+                            </div>
+                            <img src="img/spotifyplay.jpeg" alt="songs">
+                            <h6 class="h6">Prince Mishra, Piyush Mishra,Betu Mishra Lorem ipsum dolor</h6>
+                        </div>
+                        <div class="creater">
+                            <div class="play">
+                                <svg width="100" height="100" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                                    <!-- Green background circle -->
+                                    <circle cx="50" cy="50" r="50" fill="green" />
+
+                                    <!-- Black play button -->
+                                    <polygon points="40,30 70,50 40,70" fill="black" />
+                                </svg>
+                            </div>
+                            <img src="img/spotifyplay.jpeg" alt="songs">
+                            <h6 class="h6">Prince Mishra, Piyush Mishra,Betu Mishra Lorem ipsum dolor</h6>
+                        </div>
+                        <div class="creater">
+                            <div class="play">
+                                <svg width="100" height="100" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                                    <!-- Green background circle -->
+                                    <circle cx="50" cy="50" r="50" fill="green" />
+
+                                    <!-- Black play button -->
+                                    <polygon points="40,30 70,50 40,70" fill="black" />
+                                </svg>
+                            </div>
+                            <img src="img/spotifyplay.jpeg" alt="songs">
+                            <h6 class="h6">Prince Mishra, Piyush Mishra,Betu Mishra Lorem ipsum dolor</h6>
+                        </div>
+                        <div class="creater">
+                            <div class="play">
+                                <svg width="100" height="100" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                                    <!-- Green background circle -->
+                                    <circle cx="50" cy="50" r="50" fill="green" />
+
+                                    <!-- Black play button -->
+                                    <polygon points="40,30 70,50 40,70" fill="black" />
+                                </svg>
+                            </div>
+                            <img src="img/spotifyplay.jpeg" alt="songs">
+                            <h6 class="h6">Prince Mishra, Piyush Mishra,Betu Mishra Lorem ipsum dolor</h6>
+                        </div>
+                        <div class="creater">
+                            <div class="play">
+                                <svg width="100" height="100" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                                    <!-- Green background circle -->
+                                    <circle cx="50" cy="50" r="50" fill="green" />
+
+                                    <!-- Black play button -->
+                                    <polygon points="40,30 70,50 40,70" fill="black" />
+                                </svg>
+                            </div>
+                            <img src="img/spotifyplay.jpeg" alt="songs">
+                            <h6 class="h6">Prince Mishra, Piyush Mishra,Betu Mishra Lorem ipsum dolor</h6>
+                        </div>
+                        <div class="creater">
+                            <div class="play">
+                                <svg width="100" height="100" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                                    <!-- Green background circle -->
+                                    <circle cx="50" cy="50" r="50" fill="green" />
+
+                                    <!-- Black play button -->
+                                    <polygon points="40,30 70,50 40,70" fill="black" />
+                                </svg>
+                            </div>
+                            <img src="img/spotifyplay.jpeg" alt="songs">
+                            <h6 class="h6">Prince Mishra, Piyush Mishra,Betu Mishra Lorem ipsum dolor</h6>
+                        </div>
+                        <div class="creater">
+                            <div class="play">
+                                <svg width="100" height="100" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                                    <!-- Green background circle -->
+                                    <circle cx="50" cy="50" r="50" fill="green" />
+
+                                    <!-- Black play button -->
+                                    <polygon points="40,30 70,50 40,70" fill="black" />
+                                </svg>
+                            </div>
+                            <img src="img/spotifyplay.jpeg" alt="songs">
+                            <h6 class="h6">Prince Mishra, Piyush Mishra,Betu Mishra Lorem ipsum dolor</h6>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="songs-nav">
+                    <h3>Trending Episodes</h3>
+                    <h5>Show All</h5>
+                </div>
+
+                <div class="songs radio">
+                    <div class="song-img">
+                        <div class="creater">
+                            <div class="play">
+                                <svg width="100" height="100" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                                    <!-- Green background circle -->
+                                    <circle cx="50" cy="50" r="50" fill="green" />
+
+                                    <!-- Black play button -->
+                                    <polygon points="40,30 70,50 40,70" fill="black" />
+                                </svg>
+                            </div>
+                            <img src="img/episodes.jpeg" alt="songs">
+                            <h6 class="h6">Prince Mishra, Piyush Mishra,Betu Mishra Lorem ipsum dolor</h6>
+                        </div>
+                        <div class="creater">
+                            <div class="play">
+                                <svg width="100" height="100" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                                    <!-- Green background circle -->
+                                    <circle cx="50" cy="50" r="50" fill="green" />
+
+                                    <!-- Black play button -->
+                                    <polygon points="40,30 70,50 40,70" fill="black" />
+                                </svg>
+                            </div>
+                            <img src="img/episodes.jpeg" alt="songs">
+                            <h6 class="h6">Prince Mishra, Piyush Mishra,Betu Mishra Lorem ipsum dolor</h6>
+                        </div>
+                        <div class="creater">
+                            <div class="play">
+                                <svg width="100" height="100" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                                    <!-- Green background circle -->
+                                    <circle cx="50" cy="50" r="50" fill="green" />
+
+                                    <!-- Black play button -->
+                                    <polygon points="40,30 70,50 40,70" fill="black" />
+                                </svg>
+                            </div>
+                            <img src="img/episodes.jpeg" alt="songs">
+                            <h6 class="h6">Prince Mishra, Piyush Mishra,Betu Mishra Lorem ipsum dolor</h6>
+                        </div>
+                        <div class="creater">
+                            <div class="play">
+                                <svg width="100" height="100" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                                    <!-- Green background circle -->
+                                    <circle cx="50" cy="50" r="50" fill="green" />
+
+                                    <!-- Black play button -->
+                                    <polygon points="40,30 70,50 40,70" fill="black" />
+                                </svg>
+                            </div>
+                            <img src="img/episodes.jpeg" alt="songs">
+                            <h6 class="h6">Prince Mishra, Piyush Mishra,Betu Mishra Lorem ipsum dolor</h6>
+                        </div>
+                        <div class="creater">
+                            <div class="play">
+                                <svg width="100" height="100" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                                    <!-- Green background circle -->
+                                    <circle cx="50" cy="50" r="50" fill="green" />
+
+                                    <!-- Black play button -->
+                                    <polygon points="40,30 70,50 40,70" fill="black" />
+                                </svg>
+                            </div>
+                            <img src="img/episodes.jpeg" alt="songs">
+                            <h6 class="h6">Prince Mishra, Piyush Mishra,Betu Mishra Lorem ipsum dolor</h6>
+                        </div>
+                        <div class="creater">
+                            <div class="play">
+                                <svg width="100" height="100" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                                    <!-- Green background circle -->
+                                    <circle cx="50" cy="50" r="50" fill="green" />
+
+                                    <!-- Black play button -->
+                                    <polygon points="40,30 70,50 40,70" fill="black" />
+                                </svg>
+                            </div>
+                            <img src="img/episodes.jpeg" alt="songs">
+                            <h6 class="h6">Prince Mishra, Piyush Mishra,Betu Mishra Lorem ipsum dolor</h6>
+                        </div>
+                        <div class="creater">
+                            <div class="play">
+                                <svg width="100" height="100" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                                    <!-- Green background circle -->
+                                    <circle cx="50" cy="50" r="50" fill="green" />
+
+                                    <!-- Black play button -->
+                                    <polygon points="40,30 70,50 40,70" fill="black" />
+                                </svg>
+                            </div>
+                            <img src="img/episodes.jpeg" alt="songs">
+                            <h6 class="h6">Prince Mishra, Piyush Mishra,Betu Mishra Lorem ipsum dolor</h6>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- ====================================footer=========================================== -->
+
+                <nav>
+                    <div>
+                        <div class="links-footer">
+                            <div class="a">
+                                <div>
+                                    <div>
+                                        <ul>
+                                            <p>Company</p>
+                                            <a href="https://www.spotify.com/in-en/about-us/contact/">About</a>
+                                            <a href="https://www.lifeatspotify.com/">Jobs</a>
+                                            <a href="https://newsroom.spotify.com/">For the Record</a>
+                                        </ul>
+                                    </div>
+                                    <div>
+                                        <ul>
+                                            <p>Communities</p>
+                                            <a href="https://artists.spotify.com/">For Artists</a>
+                                            <a href="https://developer.spotify.com/">Developers</a>
+                                            <a href="https://ads.spotify.com/">Advertising</a>
+                                            <a href="https://investors.spotify.com/">Investors</a>
+                                            <a href="https://spotifyforvendors.com/">Vendors</a>
+                                        </ul>
+                                    </div>
+                                    <div>
+                                        <ul>
+                                            <p>Useful links</p>
+                                            <a href="https://support.spotify.com/">Support</a>
+                                            <a href="https://www.spotify.com/in-en/free/">Free Mobile App</a>
+                                        </ul>
+                                    </div>
+                                    <div>
+                                        <ul>
+                                            <p>Spotify Plans</p>
+                                            <a
+                                                href="https://www.spotify.com/in-en/premium/?ref=spotifycom_footer_premium_individual">Premium
+                                                Individual</a>
+                                            <a
+                                                href="https://www.spotify.com/in-en/duo/?ref=spotifycom_footer_premium_duo">Premium
+                                                Duo</a>
+                                            <a
+                                                href="https://www.spotify.com/in-en/family/?ref=spotifycom_footer_premium_family">Premium
+                                                Family</a>
+                                            <a
+                                                href="https://www.spotify.com/in-en/student/?ref=spotifycom_footer_premium_student">Premium
+                                                Student</a>
+                                            <a href="https://www.spotify.com/in-en/free/?ref=spotifycom_footer_free">Spotify
+                                                Free</a>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="social">
+                                        <a href="https://instagram.com/spotify" aria-label="Instagram" title="Instagram"
+                                            target="_blank" rel="noopener noreferrer">
+                                            <svg viewBox="0 0 16 16">
+                                                <path
+                                                    d="M8 1.44c2.136 0 2.389.009 3.233.047.78.036 1.203.166 1.485.276.348.128.663.332.921.598.266.258.47.573.599.921.11.282.24.706.275 1.485.039.844.047 1.097.047 3.233s-.008 2.389-.047 3.232c-.035.78-.166 1.204-.275 1.486a2.654 2.654 0 0 1-1.518 1.518c-.282.11-.706.24-1.486.275-.843.039-1.097.047-3.233.047s-2.39-.008-3.232-.047c-.78-.035-1.204-.165-1.486-.275a2.477 2.477 0 0 1-.921-.599 2.477 2.477 0 0 1-.599-.92c-.11-.282-.24-.706-.275-1.486-.038-.844-.047-1.096-.047-3.232s.009-2.39.047-3.233c.036-.78.166-1.203.275-1.485.129-.348.333-.663.599-.921a2.49 2.49 0 0 1 .92-.599c.283-.11.707-.24 1.487-.275.843-.038 1.096-.047 3.232-.047L8 1.441zm.001-1.442c-2.172 0-2.445.01-3.298.048-.854.04-1.435.176-1.943.373a3.928 3.928 0 0 0-1.417.923c-.407.4-.722.883-.923 1.417-.198.508-.333 1.09-.372 1.942C.01 5.552 0 5.826 0 8c0 2.172.01 2.445.048 3.298.04.853.174 1.433.372 1.941.2.534.516 1.017.923 1.417.4.407.883.722 1.417.923.508.198 1.09.333 1.942.372.852.039 1.126.048 3.299.048 2.172 0 2.445-.01 3.298-.048.853-.04 1.433-.174 1.94-.372a4.087 4.087 0 0 0 2.34-2.34c.199-.508.334-1.09.373-1.942.039-.851.048-1.125.048-3.298s-.01-2.445-.048-3.298c-.04-.853-.174-1.433-.372-1.94a3.924 3.924 0 0 0-.923-1.418A3.928 3.928 0 0 0 13.24.42c-.508-.197-1.09-.333-1.942-.371-.851-.041-1.125-.05-3.298-.05l.001-.001z">
+                                                </path>
+                                                <path
+                                                    d="M8 3.892a4.108 4.108 0 1 0 0 8.216 4.108 4.108 0 0 0 0-8.216zm0 6.775a2.668 2.668 0 1 1 0-5.335 2.668 2.668 0 0 1 0 5.335zm4.27-5.978a.96.96 0 1 0 0-1.92.96.96 0 0 0 0 1.92z">
+                                                </path>
+                                            </svg>
+                                        </a>
+                                    </div>
+                                    <div class="social">
+                                        <a href="https://twitter.com/spotify" aria-label="Twitter" title="Twitter"
+                                            target="_blank" rel="noopener noreferrer">
+                                            <svg viewBox="0 0 16 16">
+                                                <path
+                                                    d="M13.54 3.889a2.968 2.968 0 0 0 1.333-1.683 5.937 5.937 0 0 1-1.929.738 2.992 2.992 0 0 0-.996-.706 2.98 2.98 0 0 0-1.218-.254 2.92 2.92 0 0 0-2.143.889 2.929 2.929 0 0 0-.889 2.15c0 .212.027.442.08.691a8.475 8.475 0 0 1-3.484-.932A8.536 8.536 0 0 1 1.532 2.54a2.993 2.993 0 0 0-.413 1.523c0 .519.12 1 .361 1.445.24.445.57.805.988 1.08a2.873 2.873 0 0 1-1.373-.374v.04c0 .725.23 1.365.69 1.92a2.97 2.97 0 0 0 1.739 1.048 2.937 2.937 0 0 1-1.365.056 2.94 2.94 0 0 0 1.063 1.5 2.945 2.945 0 0 0 1.77.603 5.944 5.944 0 0 1-3.77 1.302c-.243 0-.484-.016-.722-.048A8.414 8.414 0 0 0 5.15 14c.905 0 1.763-.12 2.572-.361.81-.24 1.526-.57 2.147-.988a9.044 9.044 0 0 0 1.683-1.46c.5-.556.911-1.155 1.234-1.798a9.532 9.532 0 0 0 .738-1.988 8.417 8.417 0 0 0 .246-2.429 6.177 6.177 0 0 0 1.508-1.563c-.56.249-1.14.407-1.738.476z">
+                                                </path>
+                                            </svg>
+                                        </a>
+                                    </div>
+                                    <div class="social">
+                                        <a href="https://www.facebook.com/Spotify" aria-label="Facebook"
+                                            title="Facebook" target="_blank" rel="noopener noreferrer">
+                                            <svg viewBox="0 0 16 16">
+                                                <path
+                                                    d="M15.117 0H.883A.883.883 0 0 0 0 .883v14.234c0 .487.396.883.883.883h7.66V9.804H6.272V7.548h2.271V5.738c0-2.25 1.375-3.477 3.382-3.477.961 0 1.788.071 2.028.103v2.35h-1.39c-1.09 0-1.301.517-1.301 1.276v1.558h2.602l-.34 2.256H11.26v6.195h3.857a.883.883 0 0 0 .883-.883V.883A.883.883 0 0 0 15.117 0">
+                                                </path>
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="footer">
+                        <p>© 2023 Spotify AB</p>
+                    </div>
+                </nav>
+
+            </div>
+        </div>
+        <div class="player">
+            
+        </div>
+    </div>
+
+    <!-- ======================================================javaScript============================= -->
+    <script src="script.js"></script>
+</body>
+
+</html>
